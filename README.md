@@ -4,6 +4,14 @@
 
 ---
 
+## 📸 Preview
+
+<p align="center">
+  <img src="./assets/preview.png" alt="Preview da interface Tech Hub & Developer Bio" width="700">
+</p>
+
+---
+
 ## 🎯 Sobre o Projeto
 
 Este projeto consiste na refatoração completa de uma interface de Link na Bio, convertendo uma estrutura didática em um produto digital moderno, acessível (A11y) e focado em engenharia de software limpa.
@@ -23,5 +31,5 @@ Este projeto consiste na refatoração completa de uma interface de Link na Bio,
 Desenvolvido por **Lincoln Berto**
 
 - 🌐 Portfólio: [lincolnberto.com](https://lincolnberto.com)
-- 💼 LinkedIn: [linkedin.com/in/eilincoln](https://www.linkedin.com/in/lincoln-berto/)
+- 💼 LinkedIn: [linkedin.com/in/lincoln-berto](https://www.linkedin.com/in/lincoln-berto/)
 - 🐙 GitHub: [@eilincoln](https://github.com/eilincoln)
