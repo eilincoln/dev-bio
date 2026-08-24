@@ -1,0 +1,115 @@
+/* ==========================================================================
+   Profile / Hero Section Module
+   ========================================================================== */
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-lg);
+  gap: var(--space-md);
+}
+
+/* Container do Avatar com Pseudo-elemento para Gradiente */
+.profile__avatar-wrapper {
+  position: relative;
+  width: 124px;
+  height: 124px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-full);
+}
+
+/* Anel externo em gradiente via ::before */
+.profile__avatar-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-full);
+  background: var(--gradient-brand);
+  z-index: 1;
+  transition: transform var(--transition-normal);
+}
+
+/* Micro-interação de expansão do anel ao focar/passar o mouse */
+.profile__avatar-wrapper:hover::before {
+  transform: scale(1.04) rotate(180deg);
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.profile__avatar {
+  position: relative;
+  width: 116px;
+  height: 116px;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+  background-color: var(--bg-surface);
+  border: 3px solid var(--bg-primary);
+  z-index: 2;
+}
+
+/* Informações e Tipografia */
+.profile__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.profile__title-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+/* Título com barra de gradiente personalizada no ::after */
+.profile__name {
+  position: relative;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  padding-bottom: 6px;
+}
+
+.profile__name::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 3px;
+  background: var(--gradient-glow);
+  border-radius: var(--radius-full);
+  transition: width var(--transition-normal);
+}
+
+.profile__title-wrapper:hover .profile__name::after {
+  width: 100%;
+}
+
+/* Selo de Verificação Acessível */
+.profile__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #38bdf8;
+  filter: drop-shadow(0 0 6px rgba(56, 189, 248, 0.4));
+}
+
+.profile__role {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: #a855f7;
+  font-weight: 500;
+}
+
+.profile__bio {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  max-width: 420px;
+  margin-top: 2px;
+}
