@@ -1,51 +1,28 @@
-/* ==========================================================================
-   Design Tokens & Paleta Semântica (Light / Dark Theme)
-   ========================================================================== */
-
 :root {
-  /* Modo Claro (Default) */
   --bg-color: #fafafa;
-  --bg-surface: #ffffff;
-  --bg-surface-hover: #f1f5f9;
-  --text-primary: #0f172a;
-  --text-secondary: #475569;
-  --text-muted: #94a3b8;
+  --text-color: #0f172a;
+  --text-muted: #475569;
+  --primary-color: #1e293b;
+  --accent-color: #f59e0b;
 
-  --accent-color: #d97706; /* Amber escurecido para contraste WCAG no fundo claro */
-  --accent-subtle: rgba(217, 119, 6, 0.1);
-  --border-subtle: #e2e8f0;
-  --border-strong: #cbd5e1;
+  --border-color: #e2e8f0;
+  --border-color-strong: #cbd5e1;
+  --card-bg: #ffffff;
 
-  /* Tipografia */
-  --font-primary: "Inter", system-ui, -apple-system, sans-serif;
-  --font-mono: "JetBrains Mono", monospace;
+  --font-primary: system-ui, -apple-system, sans-serif;
+  --font-geek: "Courier New", Courier, monospace;
 
-  /* Espaçamentos */
-  --space-xs: 0.5rem;
-  --space-sm: 0.75rem;
-  --space-md: 1.25rem;
-  --space-lg: 2rem;
-  --space-xl: 3.5rem;
-
-  /* Formas & Transições */
-  --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-full: 9999px;
-  --transition-fast: 0.15s ease-in-out;
-  --transition-normal: 0.25s ease-in-out;
+  --transition-fast: 0.2s ease;
 }
 
-/* Modo Escuro */
 [data-theme="dark"] {
   --bg-color: #0b1220;
-  --bg-surface: #131b2e;
-  --bg-surface-hover: #1e293b;
-  --text-primary: #f8fafc;
-  --text-secondary: #cbd5e1;
-  --text-muted: #64748b;
-
+  --text-color: #e5e9f0;
+  --text-muted: #94a3b8;
+  --primary-color: #cbd5e1;
   --accent-color: #f59e0b;
-  --accent-subtle: rgba(245, 158, 11, 0.12);
-  --border-subtle: #1e293b;
-  --border-strong: #334155;
+
+  --border-color: #334155;
+  --border-color-strong: #475569;
+  --card-bg: #131b2e;
 }

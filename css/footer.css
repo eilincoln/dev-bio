@@ -1,12 +1,8 @@
-/* ==========================================================================
-   Footer Section Module
-   ========================================================================== */
-
 .footer {
   width: 100%;
   padding-block: var(--space-md) var(--space-xl);
   text-align: center;
-  border-top: 1px solid var(--border-subtle);
+  border-top: 3px dashed var(--border-color);
   display: flex;
   flex-direction: column;
   gap: var(--space-xs);
@@ -14,16 +10,17 @@
 
 .footer__text {
   font-size: 0.85rem;
-  color: var(--text-secondary);
+  color: var(--text-muted);
 }
 
 .footer__highlight {
+  font-family: var(--font-geek);
   color: var(--accent-color);
-  font-weight: 600;
+  font-weight: bold;
 }
 
 .footer__subtext {
-  font-size: 0.75rem;
+  font-family: var(--font-geek);
+  font-size: 0.8rem;
   color: var(--text-muted);
-  font-family: var(--font-mono);
 }

@@ -4,119 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Lincoln Berto - Tech Hub, links profissionais e stack técnica.">
-    <title>Lincoln Berto | Tech Hub</title>
+    <meta name="description" content="Cartão de Visitas Digital & Protocolos de Conexão - Lincoln Berto.">
+    <title>Lincoln Berto | Dev Card & Protocolos</title>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Anti-Flash Theme Script -->
+    <script>
+        (function () {
+            if (localStorage.getItem("theme") === "dark") {
+                document.documentElement.setAttribute("data-theme", "dark");
+            }
+        })();
+    </script>
 
-    <!-- CSS Mestre -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <main class="container">
-        <!-- Theme Toggle Switch -->
-        <div class="theme-switch-wrapper">
+    <!-- Terminal Full Screen Shell -->
+    <main class="viewport-card">
+        <!-- Top Bar / Sistema -->
+        <header class="card__top-bar">
+            <div class="card__sys-info">
+                <span class="status-indicator"></span>
+                <span class="card__tag">// SYSTEM_ID: LINCOLN_BERTO.EXE</span>
+            </div>
             <button id="theme-toggle" class="theme-toggle-btn" aria-label="Alternar tema claro/escuro" type="button">
-                <svg class="theme-icon sun-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="12" cy="12" r="5"></circle>
-                    <line x1="12" y1="1" x2="12" y2="3"></line>
-                    <line x1="12" y1="21" x2="12" y2="23"></line>
-                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                    <line x1="1" y1="12" x2="3" y2="12"></line>
-                    <line x1="21" y1="12" x2="23" y2="12"></line>
-                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                </svg>
-                <svg class="theme-icon moon-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                </svg>
+                <span class="moon-icon" aria-hidden="true">🌙</span>
+                <span class="sun-icon" aria-hidden="true">☀️</span>
             </button>
-        </div>
-        <header class="profile">
-            <div class="profile__avatar-wrapper">
-                <img src="./assets/pic-profile.png" alt="Foto de perfil de Lincoln Berto" class="profile__avatar" width="120" height="120">
-            </div>
-
-            <div class="profile__info">
-                <div class="profile__title-wrapper">
-                    <h1 class="profile__name">Lincoln Berto</h1>
-                    <span class="profile__badge" aria-label="Perfil verificado" title="Perfil Verificado">
-                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
-                        </svg>
-                    </span>
-                </div>
-                <p class="profile__role">Desenvolvedor Front-End | Em transição para Full Stack</p>
-                <p class="profile__bio">Construindo aplicações web modernas, documentando decisões de código e evoluindo rumo ao mercado internacional.</p>
-            </div>
         </header>
 
-        <!-- Links Section -->
-        <nav class="links" aria-label="Links profissionais e projetos">
-            <ul class="links__list">
-                <li class="links__item">
-                    <a href="https://github.com/eilincoln" target="_blank" rel="noopener noreferrer" class="links__anchor">
-                        <span class="links__icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
-                            </svg>
-                        </span>
-                        <span class="links__text">GitHub (Repositórios & Clean Code)</span>
-                        <span class="links__arrow" aria-hidden="true">→</span>
+        <!-- Bloco de Perfil / Identidade -->
+        <section class="card__hero">
+            <div class="card__avatar-frame">
+                <img src="./assets/pic-profile.png" alt="Foto de Lincoln Berto" class="card__avatar">
+            </div>
+
+            <div class="card__identity">
+                <div class="card__name-wrapper">
+                    <h1 class="card__name">Lincoln Berto</h1>
+                    <span class="card__badge" title="Verificado">⚡</span>
+                </div>
+                <p class="card__role">&gt; Desenvolvedor Front-End & Técnico de TI</p>
+                <p class="card__meta">Construindo interfaces com lógica, foco e simplicidade.</p>
+            </div>
+        </section>
+
+        <!-- Bloco de Conexões (Centralizado) -->
+        <nav class="card__nav" aria-label="Protocolos de Conexão">
+            <p class="nav-title">// PROTOCOLOS_DE_CONEXÃO</p>
+            <ul class="card__list">
+                <li>
+                    <a href="https://lincolnberto.com" target="_blank" rel="noopener noreferrer" class="card__link">
+                        <span class="protocol">WEB:</span>
+                        <span class="link-label">://lincolnberto.com</span>
+                        <span class="link-arrow">→</span>
                     </a>
                 </li>
-
-                <li class="links__item">
-                    <a href="https://www.linkedin.com/in/lincoln-berto/" target="_blank" rel="noopener noreferrer" class="links__anchor">
-                        <span class="links__icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
-                            </svg>
-                        </span>
-                        <span class="links__text">LinkedIn (Jornada & Decisões Técnicas)</span>
-                        <span class="links__arrow" aria-hidden="true">→</span>
+                <li>
+                    <a href="https://github.com/eilincoln" target="_blank" rel="noopener noreferrer" class="card__link">
+                        <span class="protocol">GIT:</span>
+                        <span class="link-label">://github.com/eilincoln</span>
+                        <span class="link-arrow">→</span>
                     </a>
                 </li>
-
-                <li class="links__item">
-                    <a href="https://lincolnberto.com.br" target="_blank" rel="noopener noreferrer" class="links__anchor">
-                        <span class="links__icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10" />
-                                <line x1="2" y1="12" x2="22" y2="12" />
-                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                            </svg>
-                        </span>
-                        <span class="links__text">Portfólio Oficial & Projetos</span>
-                        <span class="links__arrow" aria-hidden="true">→</span>
+                <li>
+                    <a href="https://www.linkedin.com/in/lincoln-berto/" target="_blank" rel="noopener noreferrer" class="card__link">
+                        <span class="protocol">LKD:</span>
+                        <span class="link-label">://linkedin.com/in/lincoln-berto/</span>
+                        <span class="link-arrow">→</span>
                     </a>
                 </li>
-
-                <li class="links__item">
-                    <a href="https://youtube.com/@eilincoln" target="_blank" rel="noopener noreferrer" class="links__anchor">
-                        <span class="links__icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-                            </svg>
-                        </span>
-                        <span class="links__text">YouTube (Código na Prática & DevLogs)</span>
-                        <span class="links__arrow" aria-hidden="true">→</span>
+                <li>
+                    <a href="https://youtube.com/@eilincoln" target="_blank" rel="noopener noreferrer" class="card__link">
+                        <span class="protocol">YT:</span>
+                        <span class="link-label">://youtube.com/@eilincoln</span>
+                        <span class="link-arrow">→</span>
                     </a>
                 </li>
             </ul>
         </nav>
 
-        <!-- Footer Section -->
-        <footer class="footer">
-            <p class="footer__text">
-                Construído por <span class="footer__highlight">Lincoln Berto</span>
-            </p>
-            <p class="footer__subtext">Desenvolvido com HTML5 Semântico e CSS Modular Nativo.</p>
+        <!-- Rodapé do Terminal -->
+        <footer class="card__footer">
+            <p class="footer-terminal">⚡ console.log("Pronto para codar.");</p>
+            <p class="footer-copy">&copy; 2026 Lincoln Berto • Projeto Liberdade 2036</p>
         </footer>
     </main>
 
