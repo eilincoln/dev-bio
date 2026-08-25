@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cartão de Visitas Digital & Protocolos de Conexão - Lincoln Berto.">
-    <title>Lincoln Berto | Dev Card & Protocolos</title>
+    <meta name="description" content="Lincoln Berto - Terminal de Conexões e Hub Técnico.">
+    <title>lincoln@macos: ~ (zsh)</title>
 
-    <!-- Anti-Flash Theme Script -->
+    <!-- Anti-Flash de Tema -->
     <script>
         (function () {
             if (localStorage.getItem("theme") === "dark") {
@@ -20,76 +20,94 @@
 </head>
 
 <body>
-    <!-- Terminal Full Screen Shell -->
-    <main class="viewport-card">
-        <!-- Top Bar / Sistema -->
-        <header class="card__top-bar">
-            <div class="card__sys-info">
-                <span class="status-indicator"></span>
-                <span class="card__tag">// SYSTEM_ID: LINCOLN_BERTO.EXE</span>
+    <main class="terminal-window">
+        <header class="terminal-header">
+            <div class="traffic-lights">
+                <span class="light close" aria-label="Fechar"></span>
+                <span class="light minimize" aria-label="Minimizar"></span>
+                <span class="light expand" aria-label="Expandir"></span>
             </div>
-            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Alternar tema claro/escuro" type="button">
-                <span class="moon-icon" aria-hidden="true">🌙</span>
-                <span class="sun-icon" aria-hidden="true">☀️</span>
-            </button>
+
+            <div class="terminal-title">
+                <span class="folder-icon">📁</span> lincolnberto — -zsh — 80x24
+            </div>
+
+            <div class="header-actions">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Alternar tema claro/escuro" type="button">
+                    <span class="moon-icon" aria-hidden="true">🌙</span>
+                    <span class="sun-icon" aria-hidden="true">☀️</span>
+                </button>
+            </div>
         </header>
 
-        <!-- Bloco de Perfil / Identidade -->
-        <section class="card__hero">
-            <div class="card__avatar-frame">
-                <img src="./assets/pic-profile.png" alt="Foto de Lincoln Berto" class="card__avatar">
+        <!-- Corpo do Terminal -->
+        <div class="terminal-body">
+            <!-- Linha de Comando Inicial -->
+            <div class="command-line">
+                <span class="prompt-user">lincoln@macbook</span>:<span class="prompt-path">~</span><span class="prompt-git"> (main)</span>$ <span class="command-text">./display-profile.sh</span>
             </div>
 
-            <div class="card__identity">
-                <div class="card__name-wrapper">
-                    <h1 class="card__name">Lincoln Berto</h1>
-                    <span class="card__badge" title="Verificado">⚡</span>
+            <!-- Perfil / Hero -->
+            <section class="profile-block">
+                <div class="avatar-frame">
+                    <img src="./assets/pic-profile.png" alt="Foto de Lincoln Berto" class="avatar-img" width="100" height="100">
                 </div>
-                <p class="card__role">&gt; Desenvolvedor Front-End & Técnico de TI</p>
-                <p class="card__meta">Construindo interfaces com lógica, foco e simplicidade.</p>
+
+                <div class="profile-details">
+                    <div class="name-badge">
+                        <h1 class="user-name">Lincoln Berto</h1>
+                        <span class="verified-tag">⚡ VERIFIED</span>
+                    </div>
+                    <p class="role-desc">&gt; Desenvolvedor Front-End & Técnico de TI</p>
+                    <p class="bio-desc">Construindo interfaces modernas com lógica, foco e simplicidade.</p>
+                </div>
+            </section>
+
+            <!-- Linha de Comando: Conexões -->
+            <div class="command-line">
+                <span class="prompt-user">lincoln@macbook</span>:<span class="prompt-path">~</span><span class="prompt-git"> (main)</span>$ <span class="command-text">cat protocols.json</span>
             </div>
-        </section>
 
-        <!-- Bloco de Conexões (Centralizado) -->
-        <nav class="card__nav" aria-label="Protocolos de Conexão">
-            <p class="nav-title">// PROTOCOLOS_DE_CONEXÃO</p>
-            <ul class="card__list">
-                <li>
-                    <a href="https://lincolnberto.com" target="_blank" rel="noopener noreferrer" class="card__link">
-                        <span class="protocol">WEB:</span>
-                        <span class="link-label">://lincolnberto.com</span>
-                        <span class="link-arrow">→</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/eilincoln" target="_blank" rel="noopener noreferrer" class="card__link">
-                        <span class="protocol">GIT:</span>
-                        <span class="link-label">://github.com/eilincoln</span>
-                        <span class="link-arrow">→</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/lincoln-berto/" target="_blank" rel="noopener noreferrer" class="card__link">
-                        <span class="protocol">LKD:</span>
-                        <span class="link-label">://linkedin.com/in/lincoln-berto/</span>
-                        <span class="link-arrow">→</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://youtube.com/@lincoln-berto" target="_blank" rel="noopener noreferrer" class="card__link">
-                        <span class="protocol">YT:</span>
-                        <span class="link-label">://youtube.com/@lincoln-berto</span>
-                        <span class="link-arrow">→</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+            <!-- Protocolos / Links -->
+            <nav class="protocols-nav" aria-label="Protocolos de Conexão">
+                <ul class="protocols-list">
+                    <li>
+                        <a href="https://lincolnberto.com" target="_blank" rel="noopener noreferrer" class="protocol-card">
+                            <span class="proto-key">"web"</span><span class="proto-colon">:</span>
+                            <span class="proto-val">"https://lincolnberto.com"</span>
+                            <span class="proto-arrow">→</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/eilincoln" target="_blank" rel="noopener noreferrer" class="protocol-card">
+                            <span class="proto-key">"git"</span><span class="proto-colon">:</span>
+                            <span class="proto-val">"https://github.com/eilincoln"</span>
+                            <span class="proto-arrow">→</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/lincoln-berto/" target="_blank" rel="noopener noreferrer" class="protocol-card">
+                            <span class="proto-key">"lkd"</span><span class="proto-colon">:</span>
+                            <span class="proto-val">"https://linkedin.com/in/lincoln-berto/"</span>
+                            <span class="proto-arrow">→</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://youtube.com/@eilincoln" target="_blank" rel="noopener noreferrer" class="protocol-card">
+                            <span class="proto-key">"ytb"</span><span class="proto-colon">:</span>
+                            <span class="proto-val">"https://youtube.com/@lincoln-berto"</span>
+                            <span class="proto-arrow">→</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
 
-        <!-- Rodapé do Terminal -->
-        <footer class="card__footer">
-            <p class="footer-terminal">⚡ console.log("Pronto para codar.");</p>
-            <p class="footer-copy">&copy; 2026 Lincoln Berto • Projeto Liberdade 2036</p>
-        </footer>
+            <!-- Rodapé / Status -->
+            <footer class="terminal-footer">
+                <p class="cursor-line"><span class="prompt-user">lincoln@macbook</span>:<span class="prompt-path">~</span>$ <span class="blink-cursor">█</span></p>
+                <p class="session-info">Process completed with exit code 0 • Projeto Liberdade 2036</p>
+            </footer>
+        </div>
     </main>
 
     <script>

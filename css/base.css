@@ -3,25 +3,24 @@ html {
 }
 
 body {
-  height: 100vh;
-  height: 100dvh;
+  min-height: 100vh;
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family: var(--font-primary);
   margin: 0;
-  padding: 16px;
+  padding: 30px 20px;
   box-sizing: border-box;
-  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-y: auto;
   transition:
     background-color 0.25s ease,
     color 0.25s ease;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   body {
-    padding: 10px;
+    padding: 12px 10px;
   }
 }
