@@ -44,3 +44,18 @@ body {
   border-color: var(--accent-color);
   color: var(--accent-color);
 }
+
+/* Controle dos Ícones de Tema */
+.moon-icon {
+  display: block;
+}
+.sun-icon {
+  display: none;
+}
+
+[data-theme="dark"] .moon-icon {
+  display: none;
+}
+[data-theme="dark"] .sun-icon {
+  display: block;
+}
