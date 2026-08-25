@@ -14,24 +14,14 @@
 
 .footer__text {
   font-size: 0.85rem;
-  color: var(--text-secondary);
+  color: var(--accent-color);
 }
 
 .footer__highlight {
-  color: var(--text-primary);
+  color: var(--accent-color);
   font-weight: 600;
   position: relative;
   display: inline-block;
-}
-
-.footer__highlight::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 100%;
-  height: 1px;
-  background: var(--gradient-brand);
 }
 
 .footer__subtext {

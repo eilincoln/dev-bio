@@ -1,40 +1,51 @@
-:root {
-  /* Cores Base */
-  --bg-primary: #0a0c10;
-  --bg-surface: rgba(18, 22, 34, 0.75);
-  --bg-surface-hover: rgba(30, 38, 58, 0.9);
-  --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-accent: rgba(99, 102, 241, 0.3);
+/* ==========================================================================
+   Design Tokens & Paleta Semântica (Light / Dark Theme)
+   ========================================================================== */
 
-  /* Gradientes de Destaque */
-  --gradient-brand: linear-gradient(
-    135deg,
-    #6366f1 0%,
-    #a855f7 50%,
-    #ec4899 100%
-  );
-  --gradient-glow: linear-gradient(90deg, #6366f1, #06b6d4);
+:root {
+  /* Modo Claro (Default) */
+  --bg-color: #fafafa;
+  --bg-surface: #ffffff;
+  --bg-surface-hover: #f1f5f9;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+
+  --accent-color: #d97706; /* Amber escurecido para contraste WCAG no fundo claro */
+  --accent-subtle: rgba(217, 119, 6, 0.1);
+  --border-subtle: #e2e8f0;
+  --border-strong: #cbd5e1;
 
   /* Tipografia */
   --font-primary: "Inter", system-ui, -apple-system, sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 
-  /* Cores de Texto */
-  --text-primary: #f8fafc;
-  --text-secondary: #94a3b8;
-  --text-muted: #64748b;
-
-  /* Escala de Espaçamento */
+  /* Espaçamentos */
   --space-xs: 0.5rem;
   --space-sm: 0.75rem;
   --space-md: 1.25rem;
   --space-lg: 2rem;
   --space-xl: 3.5rem;
 
-  /* Raio & Transições */
-  --radius-sm: 8px;
-  --radius-md: 14px;
+  /* Formas & Transições */
+  --radius-sm: 6px;
+  --radius-md: 10px;
   --radius-full: 9999px;
-  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: 0.15s ease-in-out;
+  --transition-normal: 0.25s ease-in-out;
+}
+
+/* Modo Escuro */
+[data-theme="dark"] {
+  --bg-color: #0b1220;
+  --bg-surface: #131b2e;
+  --bg-surface-hover: #1e293b;
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #64748b;
+
+  --accent-color: #f59e0b;
+  --accent-subtle: rgba(245, 158, 11, 0.12);
+  --border-subtle: #1e293b;
+  --border-strong: #334155;
 }

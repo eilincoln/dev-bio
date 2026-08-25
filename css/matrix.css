@@ -25,7 +25,7 @@
 .matrix__table-wrapper {
   width: 100%;
   background-color: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
+  border: 1px solid var(--bg-surface);
   border-radius: var(--radius-md);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -40,7 +40,7 @@
 
 .matrix__table thead tr {
   background-color: rgba(255, 255, 255, 0.03);
-  border-bottom: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--bg-surface);
 }
 
 .matrix__table th {
